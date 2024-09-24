@@ -13,7 +13,10 @@ python3 nome_do_arquivo.py
 
 ```shell
 clear #(limpa a tela)
-git status #(mostra as mudanças e se foi alterado na fonte)
+git status #(mostra os status do programa e se foi alterado na fonte)
 git add README.md #(adicionar no GitHub)
 git commit -m "Eu adiciono comentários sobre as mudanças"
+git push #(puxa todas as novas mudanças)
+git log #(mostrar as versões)
+git diff #(compara as versões do código)
 ```
