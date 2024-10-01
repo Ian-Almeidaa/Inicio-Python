@@ -12,4 +12,4 @@ def areaUser(largura, altura):
     altura = int (input('Digite a altura: '))
     print(f'A área é {largura*altura}')
 
-areaUser(0, 0)
+areaUser(largura, altura)
