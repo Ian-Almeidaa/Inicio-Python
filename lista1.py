@@ -70,7 +70,7 @@ def q13():
 def q14():
     base = float(input('insira o valor da base do triangulo: '))
     high = float(input('insira o valor da altura do triangulo: '))
-    print(f'o perimetro do triangulo e de {base+high} e a sua area e de {(base*high)/2}')
+    print(f'o perimetro do triangulo e de {(base+high)*2} e a sua area e de {(base*high)}')
 
 def q15():
     product = float(input('insira o valor do produto: '))
@@ -87,4 +87,19 @@ def q17():
     print(f'o valor em Fahrenheit e de {(9*celcius + 160) /5}')
 
 def q18():
+    time = float(input('Digite o tempo gasto na viagem (horas): '))
+    speed = int(input('Agora digite a velocidade média que o veículo se deslocou (Km/h): '))
+    distance = (time*speed)
+    print(f'A distância percorrida foi de ({round (distance,2)})Km\nE a quantidade de combustível gasta foi de {distance/12}')
+
+def q19():
+    startValue = round (float(input('Digite o valor da prestação: '),2))
+    taxes = round (float(input('Digite o valor dos juros (%): '),2))
+    delay = int(input('Digite os dias em atraso: '))
+    print(f'A prestação teve o valor de R${startValue}, porém com o atraso de ({delay}) dias\nO valor final da prestação atrasada é de R${(startValue*(taxes/100))*delay}')
+
+def q20():
+    value= round(float(input('Digite o valor em Dolar (U$): ')))
+    taxe= round(float(input('Digite a cotação do Dolar (R$): ')))
+    print(f'U${value} = R${value*taxe}')
     
