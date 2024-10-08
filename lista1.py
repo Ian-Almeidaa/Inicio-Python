@@ -99,7 +99,7 @@ def q19():
     print(f'A prestação teve o valor de R${startValue}, porém com o atraso de ({delay}) dias\nO valor final da prestação atrasada é de R${(startValue*(taxes/100))*delay}')
 
 def q20():
-    value= round(float(input('Digite o valor em Dolar (U$): ')))
-    taxe= round(float(input('Digite a cotação do Dolar (R$): ')))
+    value= round(float(input('Digite o valor em Dolar (U$): ')),2)
+    taxe= round(float(input('Digite a cotação do Dolar (R$): ')),2)
     print(f'U${value} = R${value*taxe}')
     
