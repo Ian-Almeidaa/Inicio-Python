@@ -58,4 +58,42 @@ def q8():
         print(f'O valor {num} é menor do que 20')
 
 def q9():
+    yearNow = int(input('Digite o ano atual: '))
+    yearBorn = int(input('Digite o seu ano de nascimento: '))
+    if(yearNow > yearBorn):
+        print(f'a sua idade e de {yearNow-yearBorn} anos')
+    else:
+        print(f'ano de nascimento invalido')
+
+def q10():
+    num1 = int(input('Digite um número: '))
+    num2 = int(input('Digite outro número: '))
+    num3 = int(input('Digite mais um número: ')) 
+    numero = [num1, num2, num3]
+    numero.sort()
+    print(f'{numero}')
+
+def q11():
+    num1 = int(input('Digite um número: '))
+    num2 = int(input('Digite outro número: '))
+    num3 = int(input('Digite mais um número: '))
+    if(num1>num2 and num1>num3):
+        print(f'O maior número é {num1}')
+    elif(num2>num1 and num2>num3):
+        print(f'O maior número é {num2}')
+    elif(num3>num1 and num3>num2):
+        print(f'O maior número é {num3}')
+    else:
+        print(f'Os maiores números são iguais')
+
+def q12():
+    age = int(input('Digite a sua idade: '))
+    if age < 17:
+        print('você é menor de idade')
+    elif age < 65:
+        print('você já é de maior, mas ainda não é idoso')
+    else:
+        print('você é idoso')
+
+def q13():
     
