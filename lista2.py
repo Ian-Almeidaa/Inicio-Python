@@ -69,9 +69,31 @@ def q10():
     num1 = int(input('Digite um número: '))
     num2 = int(input('Digite outro número: '))
     num3 = int(input('Digite mais um número: ')) 
-    numero = [num1, num2, num3]
-    numero.sort()
-    print(f'{numero}')
+    maior = 0
+    menor = 0
+    meio = 0
+    if num1 > num2 and num1 > num3:
+        maior = num1
+    elif num2 > num1 and num2 > num3:
+        maior = num2
+    elif num3 > num1 and num3 > num2:
+        maior = num3
+
+    if num1 < num2 and num1 < num3:
+        menor = num1
+    elif num2 < num1 and num2 < num3:
+        menor = num2
+    elif num3 < num1 and num3 < num2:
+        menor = num3
+
+    if num1 < maior and num1 > menor
+        meio = num1
+    elif num2 < maior and num2 > menor
+        meio = num2
+    elif num3 < maior and num3 > menor
+        meio = num3
+
+    print(f'os números em ordem crescentes fica ({menor},{meio},{maior})')
 
 def q11():
     num1 = int(input('Digite um número: '))
