@@ -260,5 +260,4 @@ def q21():
     else:
         print('Categoria inválida, por favor devolva o livro!!')
 
-def q22():
-    
+#def q22():
