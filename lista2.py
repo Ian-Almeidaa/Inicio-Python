@@ -65,13 +65,43 @@ def q9():
     else:
         print(f'ano de nascimento invalido')
 
+# def q10():
+#     num1 = int(input('Digite um número: '))
+#     num2 = int(input('Digite outro número: '))
+#     num3 = int(input('Digite mais um número: ')) 
+#     numero = [num1, num2, num3]
+#     numero.sort()
+#     print(f'{numero}')
+
 def q10():
     num1 = int(input('Digite um número: '))
     num2 = int(input('Digite outro número: '))
     num3 = int(input('Digite mais um número: ')) 
-    numero = [num1, num2, num3]
-    numero.sort()
-    print(f'{numero}')
+    maior = 0
+    menor = 0
+    meio = 0
+    if num1 > num2 and num1 > num3:
+        maior = num1
+    elif num2 > num1 and num2 > num3:
+        maior = num2
+    elif num3 > num1 and num3 > num2:
+        maior = num3
+
+    if num1 < num2 and num1 < num3:
+        menor = num1
+    elif num2 < num1 and num2 < num3:
+        menor = num2
+    elif num3 < num1 and num3 < num2:
+        menor = num3
+
+    if num1 < maior and num1 > menor:
+        meio = num1
+    elif num2 < maior and num2 > menor:
+        meio = num2
+    elif num3 < maior and num3 > menor:
+        meio = num3
+
+    print(f'os números em ordem crescentes fica ({menor},{meio},{maior})')
 
 def q11():
     num1 = int(input('Digite um número: '))
@@ -184,4 +214,51 @@ def q18():
             print(f'O mês {year} não é válido')
 
 def q19():
+    pontos1 = round(float(input('Digite a pontuação do 1° atleta: ')),2)
+    pontos2 = round(float(input('Digite a pontuação do 2° atleta: ')),2)
+    pontos3 = round(float(input('Digite a pontuação do 3° atleta: ')),2)
+    maior = 0
+    menor = 0
+    meio = 0
+    if pontos1 > pontos2 and pontos1 > pontos3:
+        maior = pontos1
+    elif pontos2 > pontos1 and pontos2 > pontos3:
+        maior = pontos2
+    elif pontos3 > pontos1 and pontos3 > pontos2:
+        maior = pontos3
+
+    if pontos1 < pontos2 and pontos1 < pontos3:
+        menor = pontos1
+    elif pontos2 < pontos1 and pontos2 < pontos3:
+        menor = pontos2
+    elif pontos3 < pontos1 and pontos3 < pontos2:
+        menor = pontos3
+
+    if pontos1 < maior and pontos1 > menor:
+        meio = pontos1
+    elif pontos2 < maior and pontos2 > menor:
+        meio = pontos2
+    elif pontos3 < maior and pontos3 > menor:
+        meio = pontos3
+
+    print(f'As notas ficaram {maior}, {meio}, {menor}')
+
+    if pontos1+pontos2+pontos3 >= 100:
+        print(f'A sua equipe foi com a média de {(pontos1+pontos2+pontos3)/3}')
+    else:
+        print('Sua equipe foi desclassificada')
+
+#def q20():
+def q21():
+    nameBook = input('Digite o nome do livro retirado: ')
+    category = int(input('Seleciona a sua categoria\n1-Aluno\n2-Professor\nOpção: '))
+
+    if category == 1:
+        print(f'Muito bem, você precisaria devolver o livro {nameBook} em até 3 dias\nBoa leitura!!')
+    elif category == 2:
+        print(f'Muito bem, você precisaria devolver o livro {nameBook} em até 10 dias\nBoa leitura!!')
+    else:
+        print('Categoria inválida, por favor devolva o livro!!')
+
+def q22():
     
