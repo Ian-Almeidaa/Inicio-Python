@@ -65,14 +65,6 @@ def q9():
     else:
         print(f'ano de nascimento invalido')
 
-# def q10():
-#     num1 = int(input('Digite um número: '))
-#     num2 = int(input('Digite outro número: '))
-#     num3 = int(input('Digite mais um número: ')) 
-#     numero = [num1, num2, num3]
-#     numero.sort()
-#     print(f'{numero}')
-
 def q10():
     num1 = int(input('Digite um número: '))
     num2 = int(input('Digite outro número: '))
