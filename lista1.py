@@ -102,4 +102,3 @@ def q20():
     value= round(float(input('Digite o valor em Dolar (U$): ')),2)
     taxe= round(float(input('Digite a cotação do Dolar (R$): ')),2)
     print(f'U${value} = R${value*taxe}')
-    
