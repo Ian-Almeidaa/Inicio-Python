@@ -1,3 +1,5 @@
+from biblioteca import *
+
 def q1():
     for i in range(1,101,1):
         print(f'{i}°')
@@ -158,6 +160,23 @@ def q14():
         print(factor)
 
 def q15():
-    
+    val = True
+    less = 0
+    more = 0
+    while True:
+        idade = input_int('Digite a sua idade: ')
+        if idade < 21:
+            less += 1
+        elif idade > 50:
+            more += 1
+        else:
+            entrada = input('Deseja continuar inserindo idades? (S/N)')[0].strip().upper()
+            if entrada == 'S':
+                Val = True
+            elif entrada == 'N':
+                Val = False
+            else:
+                print('Entrada inválida!!')
+
 questao = int(input('Questão a ser executada: '))
 eval(f'q{questao}()')
